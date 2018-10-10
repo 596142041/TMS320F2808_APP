@@ -15,7 +15,7 @@
 #define Boot__START_ADDR ((uint32_t)0x3F7FF6)//0x3F7FF6
 #define CAN_BL_APP       0xAAAAAA
 #define CAN_BL_BOOT      0x555555
-#define DEVICE_ADDR      0x120//设备地址
+#define DEVICE_ADDR      0x12D//设备地址
 #define CMD_WIDTH        0x04
 #define ADDR_WIDTH       0x0C
 //--------------------------------------------------
