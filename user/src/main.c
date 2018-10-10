@@ -33,7 +33,6 @@ void main(void)
 	InitPieCtrl();
 	IER = 0x0000;
 	IFR = 0x0000;
-	PieVectTable.
 	InitPieVectTable();
 	MemCopy(&RamfuncsLoadStart, &RamfuncsLoadEnd, &RamfuncsRunStart);
 	MemCopy(&Flash28_API_LoadStart, &Flash28_API_LoadEnd,&Flash28_API_RunStart);//
