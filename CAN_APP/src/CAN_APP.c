@@ -224,7 +224,7 @@ void CAN_BOOT_ExecutiveCommand(CanRxMsg *pRxMessage)
 	if(can_cmd == cmd_list.Excute)//该命令在DSP中已经实现
 	{
 		__set_PRIMASK(1);
-		Flash_WR(APP_INFO_ADDR,(Uint16 *)0xF3F5,2);
+		Flash_WR(APP_INFO_ADDR,(Uint16 *)0xF3F5,1);
 		__set_PRIMASK(0);
 		exe_type = (((u32)(pRxMessage->CAN_Rx_msg_data.msg_byte.data[0])&0xFFFFFFFF)<<0x10)|\
 				   (((u32)(pRxMessage->CAN_Rx_msg_data.msg_byte.data[1])&0x00FFFFFF)<<0x08)|\
