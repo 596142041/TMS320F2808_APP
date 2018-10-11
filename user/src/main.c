@@ -27,7 +27,7 @@ Uint16 flash_ret = STATUS_SUCCESS;
 void main(void)
 {
 	InitSysCtrl();
-	DINT;
+	__disable_irq();
 	LED_GPIO_Config();
 	CAN_GPIO_Config(CANA);
 	InitPieCtrl();
