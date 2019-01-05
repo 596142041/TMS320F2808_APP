@@ -31,10 +31,10 @@ Boot_CMD_LIST cmd_list =
 
 Device_INFO DEVICE_INFO =
 {
- .FW_Version.bits.Version       = 21,
- .FW_Version.bits.date          = 9,
- .FW_Version.bits.month         = 10,
- .FW_Version.bits.year          = 2018,
+ .FW_Version.bits.Version       = 0x01,
+ .FW_Version.bits.date          = 0x05,
+ .FW_Version.bits.month         = 0x01,
+ .FW_Version.bits.year          = 2019,
  .Device_addr.bits.reserve      = 0x00,
  .Device_addr.bits.Device_addr  = DEVICE_ADDR,
  .FW_TYPE.bits.FW_type          = CAN_BL_APP,
