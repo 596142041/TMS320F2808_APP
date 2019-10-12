@@ -16,7 +16,6 @@ u32 data_index      = (u32)0x00;//数据指针
 Uint16 app_check[2] = {0xFFFF,0xF2F3};
 u8	   data_temp[DATA_LEN*2];
 Uint16 read_temp[READ_MAX];
-Uint16 read_temp1[READ_MAX];
 Boot_CMD_LIST cmd_list =
 {
 	.Read        = 0x0A, //读取flash数据
